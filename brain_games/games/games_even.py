@@ -1,5 +1,4 @@
-from brain_games.project_constants import number, answer
-from brain_games.project_constants import welcome_user
+from brain_games.project_constants import *
 
 
 # Функция проверки на четность
@@ -21,11 +20,9 @@ def parity_check():
         else:
             if user_answer == 'yes':
                 number_of_round = 4
-                print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-                print(f"Let's try again, {name_user}!")
+                wrong_answer(user_answer, 'no', name_user)
             else:
                 number_of_round = 4
-                print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-                print(f"Let's try again, {name_user}!")
+                wrong_answer(user_answer, 'yes', name_user)
     if number_of_round == 3:
         print(f'Congratulations, {name_user}!')

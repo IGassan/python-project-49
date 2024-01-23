@@ -5,3 +5,6 @@
 
 # Ссылка на аскинему brain-even
 https://asciinema.org/a/PhxSS76cWaEnZGtLbC1moq0tM
+
+# Ссылка на аскинему brain-calc
+https://asciinema.org/a/fLX2BTCMgBJ1qvJu7BRWybuIM
