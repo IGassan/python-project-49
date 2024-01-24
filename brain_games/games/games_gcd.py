@@ -2,23 +2,22 @@ from brain_games.project_constants import *
 
 
 # Функция калькулятор
-def calculator():
+def gcd():
     name_user = welcome_user()
-    print('What is the result of the expression?')
+    print('Find the greatest common divisor of given numbers.')
     number_of_round = 0
     while number_of_round < 3:
         random_number_1 = number()
         random_number_2 = number()
-        operand = operation()
-        print(f'Question: {random_number_1} {operand} {random_number_2}')
+        print(f'Question: {random_number_1} {random_number_2}')
         user_answer = int(answer())
-        match operand:
-            case '+':
-                currect_answer = random_number_1 + random_number_2
-            case '-':
-                currect_answer = random_number_1 - random_number_2
-            case '*':
-                currect_answer = random_number_1 * random_number_2
+        while random_number_1 != 0 and random_number_2 != 0:
+            if random_number_1 > random_number_2:
+                random_number_1 = random_number_1 % random_number_2
+            else:
+                random_number_2 = random_number_2 % random_number_1
+ 
+        currect_answer = random_number_1 + random_number_2
         if user_answer == currect_answer:
             number_of_round += 1
             print('Correct!')
