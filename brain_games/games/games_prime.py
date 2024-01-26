@@ -8,11 +8,11 @@ def test_prime_numbers():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     number_of_round = 0
     while number_of_round < 3:
-        random_number = number(10)
+        random_number = number(3)
         print(f'Question: {random_number}')
         user_answer = answer()
         counter = 2
-        while random_number % counter != 0:
+        while random_number % counter != 0 and random_number != 1:
             counter += 1
         if random_number == counter:
             currect_answer = 'yes'
