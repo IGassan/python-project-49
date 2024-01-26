@@ -2,16 +2,19 @@ from brain_games.project_constants import welcome_user, number
 from brain_games.project_constants import answer, wrong_answer
 
 
-# Функция проверки на четность
-def parity_check():
+# Функция проверки на простату
+def test_prime_numbers():
     name_user = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     number_of_round = 0
     while number_of_round < 3:
-        random_number = number(100)
+        random_number = number(10)
         print(f'Question: {random_number}')
         user_answer = answer()
-        if random_number % 2 == 0:
+        counter = 2
+        while random_number % counter != 0:
+            counter += 1
+        if random_number == counter:
             currect_answer = 'yes'
         else:
             currect_answer = 'no'

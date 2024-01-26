@@ -1,4 +1,5 @@
-from brain_games.project_constants import *
+from brain_games.project_constants import welcome_user, number, operation
+from brain_games.project_constants import answer, wrong_answer
 
 
 # Функция калькулятор

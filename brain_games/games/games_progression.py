@@ -1,8 +1,8 @@
-from brain_games.project_constants import *
-from random import choice
+from brain_games.project_constants import welcome_user, number
+from brain_games.project_constants import answer, wrong_answer
 
 
-# Функция калькулятор
+# Функция для проверки прогрессии
 def progression():
     name_user = welcome_user()
     print('What number is missing in the progression?')

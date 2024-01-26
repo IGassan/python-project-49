@@ -1,4 +1,5 @@
-from brain_games.project_constants import *
+from brain_games.project_constants import welcome_user, number
+from brain_games.project_constants import answer, wrong_answer
 
 
 # Функция калькулятор
@@ -16,7 +17,6 @@ def gcd():
                 random_number_1 = random_number_1 % random_number_2
             else:
                 random_number_2 = random_number_2 % random_number_1
- 
         currect_answer = random_number_1 + random_number_2
         if user_answer == currect_answer:
             number_of_round += 1
