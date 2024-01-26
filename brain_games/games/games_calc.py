@@ -7,8 +7,8 @@ def calculator():
     print('What is the result of the expression?')
     number_of_round = 0
     while number_of_round < 3:
-        random_number_1 = number()
-        random_number_2 = number()
+        random_number_1 = number(100)
+        random_number_2 = number(100)
         operand = operation()
         print(f'Question: {random_number_1} {operand} {random_number_2}')
         user_answer = int(answer())

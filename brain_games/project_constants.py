@@ -11,8 +11,8 @@ def welcome_user():
 
 
 # функция генератора случайного числа
-def number():
-    return randint(1, 100)
+def number(num):
+    return randint(1, num)
 
 
 # функция генератора случайного оператора

@@ -7,8 +7,8 @@ def gcd():
     print('Find the greatest common divisor of given numbers.')
     number_of_round = 0
     while number_of_round < 3:
-        random_number_1 = number()
-        random_number_2 = number()
+        random_number_1 = number(100)
+        random_number_2 = number(100)
         print(f'Question: {random_number_1} {random_number_2}')
         user_answer = int(answer())
         while random_number_1 != 0 and random_number_2 != 0:

@@ -7,7 +7,7 @@ def parity_check():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     number_of_round = 0
     while number_of_round < 3:
-        random_number = number()
+        random_number = number(100)
         print(f'Question: {random_number}')
         user_answer = answer()
         if random_number % 2 == 0:
