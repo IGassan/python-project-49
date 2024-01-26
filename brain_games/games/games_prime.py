@@ -8,7 +8,7 @@ def test_prime_numbers():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     number_of_round = 0
     while number_of_round < 3:
-        random_number = number(3)
+        random_number = number(100)
         print(f'Question: {random_number}')
         user_answer = answer()
         counter = 2
