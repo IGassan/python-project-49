@@ -27,4 +27,3 @@ def progression():
             wrong_answer(user_answer, currect_answer, name_user)
     if number_of_round == 3:
         print(f'Congratulations, {name_user}!')
-
