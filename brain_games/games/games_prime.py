@@ -1,32 +1,23 @@
 from brain_games.project_constants import welcome_user, number
-from brain_games.project_constants import answer, wrong_answer
+from brain_games.project_constants import answer, answer_for_yes_no
 
 
 # Функция проверки на простату
 def test_prime_numbers():
-    name_user = welcome_user()
+    user = welcome_user()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    number_of_round = 0
-    while number_of_round < 3:
+    counter = 0
+    while counter < 3:
         random_number = number(100)
         print(f'Question: {random_number}')
-        user_answer = answer()
-        counter = 2
-        while random_number % counter != 0 and random_number != 1:
-            counter += 1
-        if random_number == counter:
+        user_ans = answer()
+        counter_number = 2
+        while random_number % counter_number != 0 and random_number != 1:
+            counter_number += 1
+        if random_number == counter_number:
             currect_answer = 'yes'
         else:
             currect_answer = 'no'
-        if user_answer == currect_answer:
-            number_of_round += 1
-            print('Correct!')
-        else:
-            if user_answer == 'yes':
-                number_of_round = 4
-                wrong_answer(user_answer, 'no', name_user)
-            else:
-                number_of_round = 4
-                wrong_answer(user_answer, 'yes', name_user)
-    if number_of_round == 3:
-        print(f'Congratulations, {name_user}!')
+        counter = answer_for_yes_no(user_ans, currect_answer, user, counter)
+    if counter == 3:
+        print(f'Congratulations, {user}!')

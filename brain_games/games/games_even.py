@@ -1,29 +1,20 @@
 from brain_games.project_constants import welcome_user, number
-from brain_games.project_constants import answer, wrong_answer
+from brain_games.project_constants import answer, answer_for_yes_no
 
 
 # Функция проверки на четность
 def parity_check():
-    name_user = welcome_user()
+    user = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    number_of_round = 0
-    while number_of_round < 3:
+    counter = 0
+    while counter < 3:
         random_number = number(100)
         print(f'Question: {random_number}')
-        user_answer = answer()
+        user_ans = answer()
         if random_number % 2 == 0:
             currect_answer = 'yes'
         else:
             currect_answer = 'no'
-        if user_answer == currect_answer:
-            number_of_round += 1
-            print('Correct!')
-        else:
-            if user_answer == 'yes':
-                number_of_round = 4
-                wrong_answer(user_answer, 'no', name_user)
-            else:
-                number_of_round = 4
-                wrong_answer(user_answer, 'yes', name_user)
-    if number_of_round == 3:
-        print(f'Congratulations, {name_user}!')
+        counter = answer_for_yes_no(user_ans, currect_answer, user, counter)
+    if counter == 3:
+        print(f'Congratulations, {user}!')
