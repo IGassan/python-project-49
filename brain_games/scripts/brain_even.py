@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.games.games_even import parity_check
+from brain_games.games.games_even import game
 
 
 def main():
-    parity_check()
+    game()
 
 
 if __name__ == '__main__':

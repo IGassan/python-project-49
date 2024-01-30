@@ -1,29 +1,27 @@
-from brain_games.project_constants import welcome_user, number
-from brain_games.project_constants import answer, wrong_answer
+from brain_games.project_constants import welcome_user
+from brain_games.project_constants import counter, print_a_responce
+from random import randint
+import prompt
+
+
+def game():
+    name_user = welcome_user()
+    print('What number is missing in the progression?')
+    answer = counter(progression)
+    print_a_responce(name_user, answer)
 
 
 # Функция для проверки прогрессии
 def progression():
-    name_user = welcome_user()
-    print('What number is missing in the progression?')
-    number_of_round = 0
-    while number_of_round < 3:
-        arith_prog_step = number(10)
-        first_number = number(10)
-        random_number = number(10)
-        original_progression = [first_number]
-        for i in range(1, 11):
-            original_progression.append(first_number + i * arith_prog_step)
-        currect_answer = original_progression[random_number]
-        original_progression[random_number] = '..'
-        string_progression = ' '.join(map(str, original_progression))
-        print('Question: ' + string_progression)
-        user_answer = int(answer())
-        if user_answer == currect_answer:
-            number_of_round += 1
-            print('Correct!')
-        else:
-            number_of_round = 4
-            wrong_answer(user_answer, currect_answer, name_user)
-    if number_of_round == 3:
-        print(f'Congratulations, {name_user}!')
+    arith_prog_step = randint(1, 10)
+    first_number = randint(1, 10)
+    random_number = randint(1, 10)
+    original_progression = [first_number]
+    for i in range(1, 11):
+        original_progression.append(first_number + i * arith_prog_step)
+    currect_answer = original_progression[random_number]
+    original_progression[random_number] = '..'
+    string_progression = ' '.join(map(str, original_progression))
+    print('Question: ' + string_progression)
+    user_answer = int(prompt.string('Your answer: '))
+    return user_answer, currect_answer
