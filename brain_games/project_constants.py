@@ -24,5 +24,6 @@ def print_a_responce(name_user, answer):
     if answer:
         wrong, currect = answer
         print(f"'{wrong}' is wrong answer ;(. Correct answer was '{currect}'.")
+        print(f"Let's try again, {name_user}!")
     else:
         print(f'Congratulations, {name_user}!')
