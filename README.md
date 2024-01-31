@@ -6,26 +6,26 @@
 
 # Проект: Игры разума
 
-### Цель: написать программу состоящую из пяти консольных игр.
+Цель: написать программу состоящую из пяти консольных игр.
 
-### brain calc - Калькулятор. Арифметические выражения, которые необходимо вычислить
-### brain even - Определение четного числа
-### brain gcd - Определение наибольшего общего делителя
-### brain prime - Определение простого числа
-### brain progression - Прогрессия. Поиск пропущенных чисел в последовательности чисел
+brain calc - Калькулятор. Арифметические выражения, которые необходимо вычислить
+brain even - Определение четного числа
+brain gcd - Определение наибольшего общего делителя
+brain prime - Определение простого числа
+brain progression - Прогрессия. Поиск пропущенных чисел в последовательности чисел
 
 
 ### Ссылка на аскинему brain-even
-https://asciinema.org/a/PhxSS76cWaEnZGtLbC1moq0tM
+<a href="https://asciinema.org/a/632301" target="_blank"><img src="https://asciinema.org/a/632301.svg" /></a>
 
 ### Ссылка на аскинему brain-calc
-https://asciinema.org/a/fLX2BTCMgBJ1qvJu7BRWybuIM
+<a href="https://asciinema.org/a/632883" target="_blank"><img src="https://asciinema.org/a/632883.svg" /></a>
 
 ### Ссылка на аскинему brain-gcd
-https://asciinema.org/a/4ravsWUX93x208lTHiW4gNXZx
+<a href="https://asciinema.org/a/633038" target="_blank"><img src="https://asciinema.org/a/633038.svg" /></a>
 
 ### Ссылка на аскинему brain-progression
-https://asciinema.org/a/n6L7AEit9aA2IPsRDjzPHVnk8
+<a href="https://asciinema.org/a/633512" target="_blank"><img src="https://asciinema.org/a/633512.svg" /></a>
 
 ### Ссылка на аскинему brain-prime
-https://asciinema.org/a/uhVUibe2yGHAu6iIPHsR4kUbk
+<a href="https://asciinema.org/a/633520" target="_blank"><img src="https://asciinema.org/a/633520.svg" /></a>

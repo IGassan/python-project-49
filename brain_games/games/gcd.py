@@ -1,21 +1,17 @@
-from brain_games.project_constants import welcome_user
-from brain_games.project_constants import counter, print_a_responce
+from brain_games.functions import begin, quest
 from random import randint
 import prompt
 
 
 def game():
-    name_user = welcome_user()
-    print('Find the greatest common divisor of given numbers.')
-    answer = counter(gcd)
-    print_a_responce(name_user, answer)
+    begin(gcd, 'gcd')
 
 
 # Функция калькулятор
 def gcd():
     random_number_1 = randint(1, 100)
     random_number_2 = randint(1, 100)
-    print(f'Question: {random_number_1} {random_number_2}')
+    quest(random_number_1, random_number_2)
     user_answer = int(prompt.string('Your answer: '))
     while random_number_1 != 0 and random_number_2 != 0:
         if random_number_1 > random_number_2:

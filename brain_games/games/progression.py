@@ -1,14 +1,10 @@
-from brain_games.project_constants import welcome_user
-from brain_games.project_constants import counter, print_a_responce
+from brain_games.functions import begin, quest
 from random import randint
 import prompt
 
 
 def game():
-    name_user = welcome_user()
-    print('What number is missing in the progression?')
-    answer = counter(progression)
-    print_a_responce(name_user, answer)
+    begin(progression, 'progression')
 
 
 # Функция для проверки прогрессии
@@ -22,6 +18,6 @@ def progression():
     currect_answer = original_progression[random_number]
     original_progression[random_number] = '..'
     string_progression = ' '.join(map(str, original_progression))
-    print('Question: ' + string_progression)
+    quest(string_progression)
     user_answer = int(prompt.string('Your answer: '))
     return user_answer, currect_answer
