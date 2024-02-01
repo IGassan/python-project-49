@@ -2,6 +2,7 @@
 from brain_games.games.even import parity_check
 from brain_games.functions import begin_game
 
+
 def main():
     begin_game(parity_check, 'even')
 
