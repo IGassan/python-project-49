@@ -1,10 +1,6 @@
-from brain_games.functions import begin, quest
+from brain_games.functions import quest
 from random import randint
 import prompt
-
-
-def game():
-    begin(progression, 'progression')
 
 
 # Функция для проверки прогрессии
