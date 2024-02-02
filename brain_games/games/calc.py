@@ -17,5 +17,5 @@ def calculate():
             currect_answer = random_number_1 - random_number_2
         case '*':
             currect_answer = random_number_1 * random_number_2
-    operand = str(random_number_1) + operand + str(random_number_2)
+    operand = str(random_number_1) + ' ' + operand + ' ' + str(random_number_2)
     return currect_answer, operand
