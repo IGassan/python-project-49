@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.gcd import gcd
-from brain_games.functions import begin_game
+from brain_games.games.gcd import determine_divisor, GCD
+from brain_games.functions import start_game
 
 
 def main():
-    begin_game(gcd, 'gcd')
+    start_game(GCD, determine_divisor)
 
 
 if __name__ == '__main__':

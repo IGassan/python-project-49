@@ -1,12 +1,26 @@
-from brain_games.functions import quest, is_prime
 from random import randint
-import prompt
+
+
+PRIME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 # Функция проверки на простату
-def test_prime_numbers():
+def determine_prime_number():
     random_number = randint(1, 100)
-    quest(random_number)
-    user_answer = prompt.string('Your answer: ')
-    currect_answer = is_prime(random_number)
-    return user_answer, currect_answer
+    if is_prime(random_number):
+        currect_answer = 'yes'
+    else:
+        currect_answer = 'no'
+    return currect_answer, str(random_number)
+
+
+# функция проверки на простое число
+def is_prime(random_number):
+    counter_number = 2
+    while random_number % counter_number != 0 and random_number != 1:
+        counter_number += 1
+    if random_number == counter_number:
+        answer = True
+    else:
+        answer = False
+    return answer

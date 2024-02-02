@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.even import parity_check
-from brain_games.functions import begin_game
+from brain_games.games.even import determine_parity, EVEN
+from brain_games.functions import start_game
 
 
 def main():
-    begin_game(parity_check, 'even')
+    start_game(EVEN, determine_parity)
 
 
 if __name__ == '__main__':
