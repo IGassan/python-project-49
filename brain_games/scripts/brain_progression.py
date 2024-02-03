@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.progression import finding_missing_numbers, PROGRESSION
+from brain_games.games import progression
 from brain_games.functions import start_game
 
 
 def main():
-    start_game(PROGRESSION, finding_missing_numbers)
+    start_game(progression)
 
 
 if __name__ == '__main__':

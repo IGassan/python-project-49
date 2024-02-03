@@ -5,13 +5,13 @@ NUMBER_OF_QUESTIONS = 3
 
 
 # функция запуска игры
-def start_game(CONSTANT, function):
+def start_game(game):
     print('Welcome to the Brain Games!')
     name_user = prompt.string('May I have your name? ')
     print(f'Hello, {name_user}!')
-    print(CONSTANT)
+    print(game.QUESTION)
     for i in range(NUMBER_OF_QUESTIONS):
-        currect_answer, operand = function()
+        currect_answer, operand = game.begin_game()
         print('Question: ' + operand)
         user_answer = prompt.string('Your answer: ')
         if user_answer == str(currect_answer):

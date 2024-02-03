@@ -1,11 +1,11 @@
 from random import randint
 
 
-EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 # Функция проверки на четность
-def determine_parity():
+def begin_game():
     random_number = randint(1, 100)
     if random_number % 2 == 0:
         currect_answer = 'yes'
