@@ -11,8 +11,8 @@ def start_game(game):
     print(f'Hello, {name_user}!')
     print(game.QUESTION)
     for i in range(NUMBER_OF_QUESTIONS):
-        currect_answer, operand = game.begin_game()
-        print('Question: ' + operand)
+        currect_answer, operand = game.asking_question()
+        print(f'Question: {operand}')
         user_answer = prompt.string('Your answer: ')
         if user_answer == str(currect_answer):
             print('Correct!')

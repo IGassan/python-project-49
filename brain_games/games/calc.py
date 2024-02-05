@@ -1,4 +1,3 @@
-# from brain_games.functions import quest
 from random import randint, choice
 
 
@@ -6,7 +5,7 @@ QUESTION = 'What is the result of the expression?'
 
 
 # Функция калькулятор
-def begin_game():
+def asking_question():
     random_number_1 = randint(1, 100)
     random_number_2 = randint(1, 100)
     operand = choice(['+', '-', '*'])

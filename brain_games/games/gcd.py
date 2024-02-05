@@ -5,7 +5,7 @@ QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
 # Функция калькулятор
-def begin_game():
+def asking_question():
     random_number_1 = randint(1, 100)
     random_number_2 = randint(1, 100)
     rand_number_1 = random_number_1
