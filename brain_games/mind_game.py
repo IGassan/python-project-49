@@ -5,16 +5,16 @@ NUMBER_OF_QUESTIONS = 3
 
 
 # функция запуска игры
-def start_game(game):
+def start(game):
     print('Welcome to the Brain Games!')
     name_user = prompt.string('May I have your name? ')
     print(f'Hello, {name_user}!')
-    print(game.QUESTION)
+    print(game.GAME_CONDITION)
     for i in range(NUMBER_OF_QUESTIONS):
-        currect_answer, operand = game.asking_question()
+        currect_answer, operand = game.create_game_data()
         print(f'Question: {operand}')
         user_answer = prompt.string('Your answer: ')
-        if user_answer == str(currect_answer):
+        if user_answer == currect_answer:
             print('Correct!')
         else:
             print(f"'{user_answer}' is wrong answer ;(."
